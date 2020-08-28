@@ -4,6 +4,14 @@ $linguagens = ["PHP", "C#", "Java", "JavaScript"];
 
 echo $linguagens[2];
 
+$linguagens[] = "Python";
+
+echo "<br>";
+
+echo var_dump($linguagens);
+
+echo "<br>";
+
 $curso = ["Curso de PHP Fundamentos", 7.4, 40, true];
 
 $curso = [
@@ -13,6 +21,8 @@ $curso = [
     "status" => true
 ];
 
+$curso["Pre-Requisitos"] = "Lógica de Programação";
+
 echo "<br>";
 echo $curso["nome_curso"];
 echo "<br>";
@@ -21,6 +31,8 @@ echo "<br>";
 echo $curso["carga_horaria"];
 echo "<br>";
 echo $curso["status"];
+echo "<br>";
+echo $curso["Pre-Requisitos"];
 echo "<br>";
 echo "<br>";
 
